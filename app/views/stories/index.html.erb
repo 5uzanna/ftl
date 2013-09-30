@@ -1,0 +1,6 @@
+<%= link_to "List", stories_path %>
+<ul>
+<% @stories.each do |story| %>
+ <li><%= link_to story.title, story %></li>
+<% end %>
+</ul>
